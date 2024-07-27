@@ -1,0 +1,138 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    margin: 0;
+    color: #fff;
+}
+
+.calculator-container {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.calculator-heading {
+    font-size: 2.5em;
+    color: #f7c948;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.calculator-subheading {
+    font-size: 1.2em;
+    color: #ddd;
+    margin: 0 0 20px;
+}
+
+.calculator {
+    display: inline-block;
+    text-align: center;
+    width: 320px;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 50px;
+    font-size: 1.8em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.operator {
+    background-color: #ff5722;
+}
+
+button.function {
+    background-color: #673ab7;
+}
+
+button.equal-sign {
+    background-color: #4caf50;
+    grid-column: span 2;
+}
+
+button.all-clear {
+    background-color: #f44336;
+}
+
+button.clear-history {
+    background-color: #757575;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+button.operator:hover {
+    background-color: #e64a19;
+}
+
+button.function:hover {
+    background-color: #5e35b1;
+}
+
+button.equal-sign:hover {
+    background-color: #388e3c;
+}
+
+button.all-clear:hover {
+    background-color: #d32f2f;
+}
+
+button.clear-history:hover {
+    background-color: #616161;
+}
+
+.calculator-history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.calculator-history h2 {
+    font-size: 1.5em;
+    color: #f7c948;
+    margin-bottom: 10px;
+}
+
+.calculator-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.calculator-history ul li {
+    background-color: #2c2c2c;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ddd;
+}
